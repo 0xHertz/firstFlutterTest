@@ -1,3 +1,6 @@
+import 'package:first/screen/check/CheckHome.dart';
+import 'package:first/screen/logpage/LogHome.dart';
+import 'package:first/screen/mainpage/MainPage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -7,7 +10,7 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
+  // This widget is the root of your application. 尽量不动
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -28,13 +31,20 @@ class MyApp extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blueAccent),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      // home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MainPage(),
+      // 静态路由(命名路由)
+      routes: {
+        "CheckHome":(context)=>CheckHome(),
+        "LogPage":(context)=>LogHome()
+      },
     );
   }
 }
+
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
