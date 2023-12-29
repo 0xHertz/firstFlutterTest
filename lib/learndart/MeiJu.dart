@@ -12,7 +12,6 @@ import 'BaseLearn.dart' as B;
 // 导入第三方库，现在pubspec.yaml中配置，再在终端中执行pub get
 import 'package:flutter/painting.dart';
 
-
 enum Colors{
   red,
   blue,
