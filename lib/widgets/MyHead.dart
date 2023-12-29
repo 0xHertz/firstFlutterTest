@@ -30,7 +30,6 @@ class _MyHeadState extends State<MyHead> with SingleTickerProviderStateMixin{
                   fontSize: 40.0
               ),
             ),
-            SizedBox(width: 10.0),
             CircleAvatar(
               radius: 30.0, // 头像半径
               backgroundImage: AssetImage('images/user_avatar.png'), // 用户头像图片

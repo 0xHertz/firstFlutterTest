@@ -41,7 +41,7 @@ class _MySearchState extends State<MySearch>{
               borderRadius: BorderRadius.circular(50.0),
               borderSide: BorderSide(color: Colors.transparent),
             ),
-            hintText: 'Search...', // 提示文本
+            hintText: 'Search for Something...', // 提示文本
             prefixIcon: Padding(
               padding: EdgeInsets.only(left: 10.0), // 设置图标左侧间距,
               child: Icon(
